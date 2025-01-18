@@ -6,6 +6,7 @@ from .file_system import (
     get_lines,
     to_json,
     from_json,
+    file_exists
 )
 
 from .math import (

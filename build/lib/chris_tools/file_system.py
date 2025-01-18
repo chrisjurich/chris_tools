@@ -11,10 +11,16 @@ def safe_rm( fname ):
     if fpath.exists():
         fpath.unlink()
 
+
+def file_exists( fname ):
+
+    fpath = Path(fname)
+    return fpath.exists()
+
 def safe_rmdir( dirname ):
     dpath=Path(dirname)
     if dpath.is_dir():
-        shutil.rmtreet(dirname)
+        shutil.rmtree(dirname)
         
 
 def safe_mkdir( dirname, parents=True, exist_ok=True ):
@@ -55,3 +61,9 @@ def from_json(fname):
         open(fname, 'r')
     )
 
+def abs_path(fname):
+    return Path(fname).absolute()
+
+
+def file_exists(fname):
+    return Path(fname).exists()

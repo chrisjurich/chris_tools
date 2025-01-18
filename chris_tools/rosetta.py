@@ -59,6 +59,7 @@ def ddg_sele(fname, extra_res_fa=None, ddg_cutoff:float=0.1,jump:str=1, work_dir
         ])
     cmd=[
         'rosetta_scripts',
+        "-mistakes:restore_pre_talaris_2013_behavior",
         f"-parser:protocol {abs_path(protocol)}",
         f"-in:file:s {abs_path(fname)}",
         f"-out:prefix prddg_",

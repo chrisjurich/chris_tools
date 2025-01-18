@@ -1,8 +1,10 @@
+README.md
 setup.py
 chris_tools/__init__.py
 chris_tools/file_system.py
 chris_tools/math.py
 chris_tools/pymol_util.py
+chris_tools/rosetta.py
 chris_tools.egg-info/PKG-INFO
 chris_tools.egg-info/SOURCES.txt
 chris_tools.egg-info/dependency_links.txt

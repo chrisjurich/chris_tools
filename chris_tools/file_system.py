@@ -64,3 +64,6 @@ def from_json(fname):
 def abs_path(fname):
     return Path(fname).absolute()
 
+
+def file_exists(fname):
+    return Path(fname).exists()
